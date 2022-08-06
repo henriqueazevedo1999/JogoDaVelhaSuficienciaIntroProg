@@ -1,5 +1,3 @@
-import javax.swing.UIDefaults.LazyInputMap;
-
 public class JogoDaVelha_PC
 {
     private JogoDaVelha_Mapa mapa;

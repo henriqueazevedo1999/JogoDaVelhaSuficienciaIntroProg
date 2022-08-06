@@ -1,5 +1,3 @@
-import javax.swing.text.AbstractDocument.LeafElement;
-
 public class JogoDaVelha_Mapa
 {
     private char[][] mapa = new char[3][3];
