@@ -19,13 +19,16 @@ public class JogoDaVelha_PC
         {
             linha = mapa.sortear(0, 2);
             coluna = mapa.sortear(0, 2);
-        } while (mapa.jogar(linha, coluna, letra));
+        } while (!mapa.jogar(linha, coluna, letra));
 
         System.out.println("PC[" + linha + "," + coluna + "]");
 
         if (mapa.ganhou(letra))
+        {
             System.out.println("... PC GANHOU!");
+            return true;
+        }
         
-        return true;
+        return false;
     }
 }

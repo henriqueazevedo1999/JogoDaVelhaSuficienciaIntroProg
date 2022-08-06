@@ -25,12 +25,15 @@ public class JogoDaVelha_Jogador
             
             jogadaValida = mapa.jogar(linha, coluna, letra);
             if (!jogadaValida)
-                System.out.println("Posição inválida, tente novamente");
+                System.out.println("Posição invalida, tente novamente");
         }
 
         if (mapa.ganhou(letra))
+        {
             System.out.println("... Jogador GANHOU!");
+            return true;
+        }    
 
-        return true;
+        return false;
     }
 }

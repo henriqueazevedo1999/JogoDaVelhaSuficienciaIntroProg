@@ -18,11 +18,12 @@ public class JogoDaVelha_Mapa
 
     public void desenha(int jogada)
     {
-        System.out.println("------------- .. jogada: " + jogada);
-        
-        for (char[] linha : mapa)
-        System.out.println("| " + linha[0] + " | " + linha[1] + " | " + linha[2] + " |");
-
+        System.out.println("------------- .. jogada: " + jogada);        
+        System.out.println("| " + mapa[0][0] + " | " + mapa[0][1] + " | " + mapa[0][2] + " |");
+        System.out.println("-------------");
+        System.out.println("| " + mapa[1][0] + " | " + mapa[1][1] + " | " + mapa[1][2] + " |");
+        System.out.println("-------------");
+        System.out.println("| " + mapa[2][0] + " | " + mapa[2][1] + " | " + mapa[2][2] + " |");
         System.out.println("----------------------------");
     }
 
