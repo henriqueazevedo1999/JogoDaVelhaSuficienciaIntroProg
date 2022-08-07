@@ -44,9 +44,19 @@ public class JogoDaVelha
         {
             jogar(teclado);
 
-            System.out.println("Deseja jogar novamente (s/n)?");
-            char resposta = teclado.next().charAt(0);
-            jogarNovamente = resposta == 's';
+            while (true)
+            {
+                System.out.println("Deseja jogar novamente (s/n)?");
+                char resposta = teclado.next().charAt(0);
+                if (resposta == 's' || resposta == 'n')
+                {
+                    jogarNovamente = resposta == 's';
+                    break;
+                }
+
+                System.out.println("Inválido. Tente novamente.");
+            }
+
         }
     }
 }
